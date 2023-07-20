@@ -11,7 +11,7 @@ const App = () => {
   }
 
   const handleGreeting = ()=>{
-    setGreeting('Hello ${name}!');
+    setGreeting('${name}');
   }
 
   return (
@@ -19,7 +19,7 @@ const App = () => {
         {/* Do not remove the main div */}
       <label>Enter your name:</label>
       <input type='text' value={name} id='nameInput' onChange={handleNamechange}></input>
-      <p>{greeting}</p>
+      <p>Hello {greeting}!</p>
     </div>
   )
 }
